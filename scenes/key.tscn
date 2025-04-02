@@ -1,5 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://oarcepu08ggr"]
+[gd_scene load_steps=6 format=3 uid="uid://sc044ru2vq8b"]
 
+[ext_resource type="Script" uid="uid://cr422vp834osj" path="res://scripts/key.gd" id="1_fttkb"]
 [ext_resource type="Texture2D" uid="uid://b6hpbks6gep03" path="res://assets/Dungeon Tileset/Dungeon Tile Set.png" id="1_yk2u2"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yk2u2"]
@@ -18,14 +19,25 @@ animations = [{
 "texture": SubResource("AtlasTexture_yk2u2")
 }],
 "loop": true,
-"name": &"obtainable",
+"name": &"pickup",
 "speed": 5.0
 }]
 
-[node name="key" type="Area2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yk2u2"]
+size = Vector2(13, 4)
+
+[node name="Key" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_fttkb")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -6)
 sprite_frames = SubResource("SpriteFrames_fttkb")
-animation = &"obtainable"
-autoplay = "obtainable"
+animation = &"consumed"
+autoplay = "pickup"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -2)
+shape = SubResource("RectangleShape2D_yk2u2")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

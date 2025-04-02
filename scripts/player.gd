@@ -17,6 +17,11 @@ var was_on_floor = false
 var can_double_jump = true  # Track if double jump is available
 var jump_gravity_multiplier = 1.0  # Current gravity multiplier
 var jump_buffer_timer = 0.0  # Timer for jump buffer
+var has_key = false  # Track if player has the key
+
+func _ready() -> void:
+	add_to_group("player")  # Add player to group for key/chest interaction
+	print("Player added to 'player' group")
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.

@@ -4,11 +4,12 @@ extends CharacterBody2D
 
 const SPEED = 90.0  # Lower base speed like Celeste
 const AIR_SPEED = 90.0  # Full air control like Celeste
-const JUMP_VELOCITY = -315.0  # Higher jump velocity like Celeste
+const JUMP_VELOCITY = -280.0  # Lower base jump velocity
+const DOUBLE_JUMP_VELOCITY = -220.0  # Much weaker double jump
 const COYOTE_TIME = 0.1  # Same as Celeste
 const ACCELERATION = 1000.0  # How quickly we reach max speed
 const DECELERATION = 1000.0  # How quickly we slow down
-const JUMP_GRAVITY_MULTIPLIER = 0.4  # Lower gravity while holding jump
+const JUMP_GRAVITY_MULTIPLIER = 0.5  # Less floaty variable jump
 const JUMP_BUFFER_TIME = 0.1  # How long to remember a jump input before landing
 
 var coyote_timer = 0.0
@@ -62,8 +63,8 @@ func _physics_process(delta: float) -> void:
 			sprite.play("jump")
 			coyote_timer = 0  # Reset coyote timer after jumping
 		elif can_double_jump:
-			# Double jump
-			velocity.y = JUMP_VELOCITY
+			# Double jump - use slightly weaker velocity
+			velocity.y = DOUBLE_JUMP_VELOCITY
 			sprite.play("jump")  # Play jump animation for double jump
 			can_double_jump = false  # Use up the double jump
 		else:

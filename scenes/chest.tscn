@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://bv6loqvm4lpm6"]
+
+[ext_resource type="Texture2D" uid="uid://b6hpbks6gep03" path="res://assets/Dungeon Tileset/Dungeon Tile Set.png" id="1_oii8l"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sy5e1"]
+atlas = ExtResource("1_oii8l")
+region = Rect2(192, 140, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gqd3d"]
+atlas = ExtResource("1_oii8l")
+region = Rect2(208, 140, 16, 20)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yue2o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sy5e1")
+}],
+"loop": true,
+"name": &"chestclosed",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gqd3d")
+}],
+"loop": true,
+"name": &"chestopen",
+"speed": 5.0
+}]
+
+[node name="Chest" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -10)
+sprite_frames = SubResource("SpriteFrames_yue2o")
+animation = &"chestopen"
+autoplay = "chestclosed"

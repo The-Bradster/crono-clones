@@ -214,6 +214,8 @@ radius = 3.0
 height = 26.0
 
 [node name="Player" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 3
 script = ExtResource("1_g2els")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -222,7 +224,7 @@ scale = Vector2(0.743055, 0.6875)
 sprite_frames = SubResource("SpriteFrames_3v2ag")
 animation = &"jump"
 autoplay = "idle"
-frame_progress = 0.255006
+frame_progress = 0.153909
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-4, -13)

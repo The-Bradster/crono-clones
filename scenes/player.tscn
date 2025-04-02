@@ -202,6 +202,11 @@ animations = [{
 "loop": true,
 "name": &"run",
 "speed": 15.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"slide",
+"speed": 5.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jej6c"]
@@ -214,7 +219,7 @@ script = ExtResource("1_g2els")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -40)
 sprite_frames = SubResource("SpriteFrames_3v2ag")
-animation = &"jump"
+animation = &"idle"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

@@ -14,3 +14,7 @@ config/name="ChronoClone"
 run/main_scene="uid://6wqwp315uqv5"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0

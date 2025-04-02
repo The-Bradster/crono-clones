@@ -10,9 +10,10 @@ extends Area2D
 
 
 
-func _on_body_entered(body: Node2D) -> void:
-	print("deez")
-	timer.start()
+func _on_body_entered(_body: Node2D) -> void:
+	if _body.is_in_group("player"):
+		# Restart the scene
+		get_tree().reload_current_scene()
 
 func _on_timer_timeout() -> void:
 	get_tree().reload_current_scene()

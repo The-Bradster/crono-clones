@@ -137,7 +137,7 @@ script = ExtResource("1_ct3s0")
 sprite_frames = SubResource("SpriteFrames_t7uc4")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.98536
+frame_progress = 0.928724
 
 [node name="Killzone" parent="." instance=ExtResource("3_bna2k")]
 

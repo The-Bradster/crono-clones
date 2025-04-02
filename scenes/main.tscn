@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://6wqwp315uqv5"]
 
-[ext_resource type="PackedScene" uid="uid://bqoixqcow7atc" path="res://scenes/player.tscn" id="1_o5qli"]
+[ext_resource type="PackedScene" uid="uid://cj71m8mj1h0wy" path="res://scenes/player.tscn" id="1_o5qli"]
 [ext_resource type="Texture2D" uid="uid://b6hpbks6gep03" path="res://assets/Dungeon Tileset/Dungeon Tile Set.png" id="2_0wfyh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sugp2"]
@@ -186,6 +186,7 @@ sources/0 = SubResource("TileSetAtlasSource_sugp2")
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(-5, -18)
 zoom = Vector2(4, 4)
+position_smoothing_enabled = true
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_jyhfs")

@@ -207,6 +207,8 @@ position = Vector2(-93, -10)
 
 [node name="Pig" parent="." instance=ExtResource("6_o6xl0")]
 position = Vector2(293, -78)
+prevent_stairs = true
+activate_on_screen = true
 
 [node name="platforms" type="Node2D" parent="."]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://pu45yd55o055"
-path="res://.godot/imported/CQMMUI (1).png-33c2d1b706d892278deb003bd1f41057.ctex"
+uid="uid://c8swufgcsq4of"
+path="res://.godot/imported/main_menu_background.png-1024e3e8f1b3b636c6c31a01d3a25aee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/CQMMUI (1).png"
-dest_files=["res://.godot/imported/CQMMUI (1).png-33c2d1b706d892278deb003bd1f41057.ctex"]
+source_file="res://assets/Main Menu/main_menu_background.png"
+dest_files=["res://.godot/imported/main_menu_background.png-1024e3e8f1b3b636c6c31a01d3a25aee.ctex"]
 
 [params]
 

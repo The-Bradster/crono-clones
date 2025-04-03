@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://b6hpbks6gep03" path="res://assets/Dungeon Tileset/Dungeon Tile Set.png" id="2_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://b670dtv34tonp" path="res://scenes/platform.tscn" id="4_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://sc044ru2vq8b" path="res://scenes/key.tscn" id="5_tbgi4"]
-[ext_resource type="PackedScene" path="res://scenes/pig.tscn" id="6_o6xl0"]
+[ext_resource type="PackedScene" uid="uid://crfqvq4uej586" path="res://scenes/pig.tscn" id="6_o6xl0"]
 [ext_resource type="PackedScene" uid="uid://bv6loqvm4lpm6" path="res://scenes/chest.tscn" id="6_tefeu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sugp2"]

@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://c3klrsdqll0d8"]
+[gd_scene load_steps=7 format=3 uid="uid://c3klrsdqll0d8"]
 
 [ext_resource type="Script" uid="uid://cg80ijcqp51j6" path="res://scripts/main_menu.gd" id="1_bqqt6"]
 [ext_resource type="Texture2D" uid="uid://c8swufgcsq4of" path="res://assets/Main Menu/main_menu_background.png" id="1_ekxnf"]
 [ext_resource type="Texture2D" uid="uid://pu45yd55o055" path="res://assets/Main Menu/CQMMUI (1).png" id="2_bqqt6"]
+[ext_resource type="AudioStream" uid="uid://dph1mqnoub67l" path="res://assets/ChronoQuestMMTheme.mp3" id="4_wu84c"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wu84c"]
 atlas = ExtResource("2_bqqt6")
@@ -71,3 +72,8 @@ unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 4
 texture_normal = SubResource("AtlasTexture_8ln24")
+
+[node name="Main Menu Music" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_wu84c")
+autoplay = true
+parameters/looping = true

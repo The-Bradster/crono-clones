@@ -1,7 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://cqt337qyrxyn8"]
+[gd_scene load_steps=7 format=3 uid="uid://bv6loqvm4lpm6"]
 
 [ext_resource type="Texture2D" uid="uid://b6hpbks6gep03" path="res://assets/Dungeon Tileset/Dungeon Tile Set.png" id="1_oii8l"]
-[ext_resource type="Script" uid="uid://c3ydb41uaatxw" path="res://scripts/chest.gd" id="1_sy5e1"]
+[ext_resource type="Script" path="res://scripts/chest.gd" id="1_sy5e1"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sy5e1"]
 atlas = ExtResource("1_oii8l")

@@ -1,0 +1,70 @@
+[gd_scene load_steps=6 format=3 uid="uid://c3klrsdqll0d8"]
+
+[ext_resource type="Texture2D" uid="uid://pu45yd55o055" path="res://assets/CQMMUI (1).png" id="1_l6cm7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ekxnf"]
+size = Vector2(496, 82)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bqqt6"]
+size = Vector2(496, 86)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wu84c"]
+size = Vector2(458, 86)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8ln24"]
+size = Vector2(312, 80)
+
+[node name="MainMenu" type="Node2D"]
+
+[node name="titlecard" type="Sprite2D" parent="."]
+position = Vector2(0, -1)
+scale = Vector2(1, 0.998148)
+texture = ExtResource("1_l6cm7")
+region_enabled = true
+region_rect = Rect2(91, 46, 539, 270)
+
+[node name="newgamebutton" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("1_l6cm7")
+region_enabled = true
+region_rect = Rect2(90, 344, 542, 131)
+
+[node name="Area2D" type="Area2D" parent="newgamebutton"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="newgamebutton/Area2D"]
+shape = SubResource("RectangleShape2D_ekxnf")
+
+[node name="loadgamebutton" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("1_l6cm7")
+region_enabled = true
+region_rect = Rect2(90, 500, 542, 131)
+
+[node name="Area2D" type="Area2D" parent="loadgamebutton"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="loadgamebutton/Area2D"]
+shape = SubResource("RectangleShape2D_bqqt6")
+
+[node name="optionsbutton" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1, 0)
+texture = ExtResource("1_l6cm7")
+region_enabled = true
+region_rect = Rect2(110, 662, 502, 132)
+
+[node name="Area2D" type="Area2D" parent="optionsbutton"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="optionsbutton/Area2D"]
+shape = SubResource("RectangleShape2D_wu84c")
+
+[node name="exitbutton" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("1_l6cm7")
+region_enabled = true
+region_rect = Rect2(184, 829, 353, 127)
+
+[node name="Area2D" type="Area2D" parent="exitbutton"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="exitbutton/Area2D"]
+position = Vector2(1, -1)
+shape = SubResource("RectangleShape2D_8ln24")

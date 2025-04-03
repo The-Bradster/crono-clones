@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://sc044ru2vq8b"]
 
-[ext_resource type="Script" uid="uid://cr422vp834osj" path="res://scripts/key.gd" id="1_fttkb"]
+[ext_resource type="Script" path="res://scripts/key.gd" id="1_fttkb"]
 [ext_resource type="Texture2D" uid="uid://b6hpbks6gep03" path="res://assets/Dungeon Tileset/Dungeon Tile Set.png" id="1_yk2u2"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yk2u2"]
